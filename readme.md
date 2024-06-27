@@ -11,7 +11,7 @@ This project reads DBF files from a specified directory and generates correspond
 1. **Clone the repository:**
 
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/rzzo/dbf_converter
    cd dbf-to-sql
    ```
 
