@@ -1,0 +1,19 @@
+{
+	"name": "dbf_converter",
+	"version": "1.0.0",
+	"description": "A Node.js project to convert DBF files to SQL scripts.",
+	"main": "src/convert.js",
+	"scripts": {
+		"start": "node src/convert.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"DBF",
+		"SQL",
+		"converter"
+	],
+	"author": "twb",
+	"dependencies": {
+		"dbf-reader": "^1.0.3"
+	}
+}
