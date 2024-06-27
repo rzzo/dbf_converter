@@ -12,7 +12,6 @@ logs/
 pids/
 *.pid
 *.seed
-*.pid.lock
 
 # Environment variables
 .env

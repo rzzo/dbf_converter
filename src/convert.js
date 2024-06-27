@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const ora = require('ora');
 const { convertDbfToSql } = require('./utils/dbfToSql');
 
 // Get folder path from command-line arguments
@@ -37,7 +38,14 @@ fs.readdir(folderPath, (err, files) => {
     return { dbfFilePath, outputSqlFilePath, tableName };
   });
 
+  const spinner = ora('Processing DBF files...').start();
+
   convertDbfToSql(tasks)
-    .then(() => console.log('SQL files have been created successfully'))
-    .catch(err => console.error('Error during conversion:', err));
+    .then(() => {
+      spinner.succeed('SQL files have been created successfully');
+    })
+    .catch(err => {
+      spinner.fail('Error during conversion');
+      console.error('Error during conversion:', err);
+    });
 });
