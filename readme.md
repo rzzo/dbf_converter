@@ -40,7 +40,7 @@ npm start -- /path/to/dbf-folder /path/to/output-folder
 To convert all DBF files in a directory to SQLite database:
 
 ```sh
-npm run convert-sqlite -- <path-to-dbf-folder> [output-folder]
+npm run convert-sqlite -- <path-to-dbf-folder> [output-folder-and-file.sqlight]
 ```
 
 ```sh
