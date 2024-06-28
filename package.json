@@ -1,20 +1,22 @@
 {
 	"name": "dbf_converter",
 	"version": "1.0.0",
-	"description": "A Node.js project to convert DBF files to SQL scripts.",
+	"description": "A Node.js project to convert DBF files to SQL scripts and SQLite database.",
 	"main": "src/convert.js",
 	"scripts": {
 		"start": "node src/convert.js",
+		"convert-to-sqlite": "node src/convertToSqlite.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [
 		"DBF",
 		"SQL",
-		"converter"
+		"converter",
+		"SQLite"
 	],
 	"author": "twb",
 	"dependencies": {
 		"dbf-reader": "^1.0.3",
-		"ora": "^8.0.1"
+		"sqlite3": "^5.0.2"
 	}
 }
