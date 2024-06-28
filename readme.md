@@ -43,4 +43,8 @@ To convert all DBF files in a directory to SQLite database:
 npm run convert-sqlite -- <path-to-dbf-folder> [output-folder]
 ```
 
+```sh
+npm run convert-to-sqlite -- /path/to/dbf-folder /path/to/output/database.sqlite
+```
+
 This command will generate a SQLite database file with tables and data from the DBF files.
